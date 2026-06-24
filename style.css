@@ -1,0 +1,18 @@
+body{
+background-color: rgb(70, 194, 70);
+}
+
+.quadrado{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(197, 197, 197);
+    margin: 5px;
+}
+
+.flex{
+    border: 10px solid yellow;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
