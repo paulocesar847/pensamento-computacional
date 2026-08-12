@@ -1,22 +1,48 @@
-body{
-    justify-content: center;
-background-color: rgb(70, 194, 70);
-}
-
-.quadrado{
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    background-color: rgb(197, 197, 197);
-    margin: 5px;
-}
-
-.flex{
-    justify-content: center;
-    border: 10px solid yellow;
-    width: 550px;
+.cabecalho{
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
+.logotipo-icone{
+    color: rgb(247, 7, 7);
+}
+
+.cabecalho-inicio{
+    display: flex;
+    gap: 16px;
+}
+
+.logotipo{
+    display: flex;
+    align-items: start;
+}
+
+.logotipo-pais{
+    font-size: 8px;
+    color: rgb(49, 49, 49);
+}
+
+.search{
+    display: flex;
+}
+
+.search-input{
+    border: 1px solid gray;
+    outline: none;
+    height: 32px;
+    width: 300px;
+    border-radius: 20px 0 0 20px;
+}
+
+.search-button{
+    border: 1px solid gray;
+    border-radius: 0 20px 20px 0;
+}
+
+.microphone-button{
+    
+}
