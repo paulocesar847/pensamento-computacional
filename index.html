@@ -1,49 +1,132 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EuTube</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
-</head>
-<body>
-    <header class="cabecalho">
-        <div class="cabecalho-inicio">
-            <i class="fa-solid fa-bars"></i>
-            <div class="logotipo">
-                <i class="fa-brands fa-youtube logotipo-icone"></i>
-                <span class="logotipo-nome">EuTube</span>
-                <span class="logotipo-pais">BR</span>
-            </div>
-        </div>
-        </div>
-        <div class="cabecalho-centro">
-            <div class="search">
-                <input type="text" name="search" id="search-input" class="search-input">
-                <button class="search-button">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>EuTube</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div class="cabecalho-inicio">
+                <button class="botao-icone" title="Menu">
+                    <i class="fa-solid fa-bars"></i>
                 </button>
-                <button class="microphone-button">
+                <a href="#" class="logotipo">
+                    <i class="fa-brands fa-youtube logotipo-icone"></i>
+                    <span class="logotip-texto">EuTube</span>
+                    <span class="logotipo-pais">BR</span>
+                </a>
+            </div>
+
+            <div class="cabecalho-centro">
+                <form class="campo-pesquisa" onsubmit="return false;">
+                    <input
+                        type="text"
+                        class="campo-pesquisa-entrada"
+                        placeholder="Pesquisar"
+                    >
+                    <button class="campo-pesquisa-botao" title="Pesquisar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+                <button class="botao-icone botao-icone--circular" title="Pesquisar com sua voz">
                     <i class="fa-solid fa-microphone"></i>
                 </button>
             </div>
-        </div>
-        <div class="cabecalho-final">
-            <div>
-                <button class="logotipo-video" title="criar">
+
+            <div class="cabecalho-fim">
+                <button class="botao-icone" title="Criar">
                     <i class="fa-solid fa-video"></i>
                 </button>
-                <button class="logotipo-notificação" title="notificações">
+                <button class="botao-icone" title="Notificações">
                     <i class="fa-solid fa-bell"></i>
                 </button>
-                <button class="logotipo-conta" title="sua conta">
-                    <i class=""></i>
+                <button class="avatar-usuario" title="Sua conta">
+                    <i class="fa-solid fa-user"></i>
                 </button>
             </div>
+        </header>
+        <main class="principal">
+        <div class="principal-sidebar">
+            <div class="sidebar-inicio">
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Início</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <span>Shorts</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-square-rss"></i>
+                    <span>Inscrições</span>
+                </a>
+            </div>
+            <div class="sidebar-centro">
+                <span class="sidebar-titulo">Você</span>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Seu canal</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Histórico</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Playlists</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-video"></i>
+                    <span>Seus vídeos</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Assistir mais tarde</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>Vídeos curtidos</span>
+                </a>
+            </div>
+            <div class="sidebar-final">
+                <span class="sidebar-titulo">Explorar</span>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Em alta</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Música</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Filmes</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Ao vivo</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Jogos</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Notícias</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Esportes</span>
+                </a>
+            </div>
         </div>
-    </header>
-
+        <div class="principal-video">a</div>
+        <div class="principal-recomendados">a</div>
+    </main>
     <script src="script.js"></script>
 </body>
+
 </html>

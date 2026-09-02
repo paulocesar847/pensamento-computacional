@@ -1,83 +1,212 @@
-.cabecalho{
-    display: flex;
-    justify-content: space-between;
-    font-family: sans-serif;
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    zoom: 125%;
+    font-family: Roboto, Arial, sans-serif;
 }
 
-.logotipo-icone{
-    color: rgb(247, 7, 7);
-}
-
-.cabecalho-inicio{
+body {
     display: flex;
+    flex-direction: column;
+    background-color: #7d7d7d;
+    color: #0f0f0f;
+}
+
+/* ---------- Cabeçalho ---------- */
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    padding: 0 16px;
+    background-color: #7d7d7d;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.cabecalho-inicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     gap: 16px;
-    padding: 4.5px;
+    flex: 1;
 }
 
-.logotipo{
+.cabecalho-centro {
     display: flex;
-    align-items: start;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    flex: 2;
+    justify-content: center;
 }
 
-.logotipo-pais{
-    font-size: 8px;
-    color: rgb(49, 49, 49);
+.cabecalho-fim {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 8px;
+    flex: 1;
 }
 
-.search{
+.botao-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #0f0f0f;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.botao-icone:hover {
+    background-color: #f2f2f2;
+}
+
+.botao-icone--circular {
+    background-color: #f2f2f2;
+}
+
+.botao-icone--circular:hover {
+    background-color: #e5e5e5;
+}
+
+.logotipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+.logotipo-icone {
+    font-size: 28px;
+    color: #04de00;
+}
+
+.logotipo-texto {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+.logotipo-pais {
+    display: flex;
+    align-items: flex-start;
+    font-size: 10px;
+    color: #606060;
+}
+
+.campo-pesquisa {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    height: 40px;
+    border: 1px solid #bfbfbf;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.campo-pesquisa-entrada {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    padding: 0 16px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.campo-pesquisa-botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 100%;
+    border: none;
+    border-left: 1px solid #ccc;
+    background-color: #d7d7d7;
+    color: #0f0f0f;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.campo-pesquisa-botao:hover {
+    background-color: #d7d7d7;
+}
+
+.avatar-usuario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    background-color: #a2a2a2;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.principal {
+    height: 90vh;
+
     display: flex;
 }
 
-.search-input{
-    border: 1px solid gray;
-    outline: none;
-    height: 23px;
-    width: 305px;
-    border-radius: 20px 0 0 20px;
+.principal-sidebar {
+    width: 20vw;
+    padding: 8px;   
+    overflow-y: auto;
 }
 
-.search-button{
-    border: 1px solid gray;
-    border-radius: 0 20px 20px 0;
-    height: 26px;
+.sidebar-button {
+    padding: 16px;
+    border-radius: 20px;
 }
 
-.microphone-button{
-    border: 1px solid gray;
-    outline: none;
-    height: 26px;
-    width: 32px;
-    border-radius: 45px 45px 45px 45px;
+.sidebar-button:hover {
+    background-color: rgb(187, 187, 187);
 }
 
-.logotipo-video{
-    border: 1px solid gray;
-    outline: none;
-    height: 26px;
-    width: 32px;
-    border-radius: 45px 45px 45px 45px;
+.sidebar-button > i {
+    margin-right: 20px;
 }
 
-.logotipo-notificação{
-    border: 1px solid gray;
-    outline: none;
-    height: 26px;
-    width: 32px;
-    border-radius: 45px 45px 45px 45px;
+.principal-video {
+    background-color: blue;
+    width: 65vw;
 }
 
-.logotipo-conta{
-    border: 1px solid gray;
-    outline: none;
-    height: 26px;
-    width: 32px;
-    border-radius: 45px 45px 45px 45px;
+.principal-recomendados {
+    background-color: pink;
+    width: 25vw;
 }
 
-.cabecalho-final{
+.sidebar-inicio, .sidebar-centro, .sidebar-final {
     display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+}
+
+.sidebar-centro {
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.sidebar-titulo {
+    padding: 16px;
+    margin: 8px 0;
 }
