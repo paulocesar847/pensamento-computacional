@@ -1,0 +1,176 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+    height: 10vh;
+    background-color: yellow;
+}
+
+.cabecalho-inicio {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+}
+
+.logotipo-nome {
+    font-weight: bold;
+}
+
+.logotipo-icone {
+    color: red;
+}
+
+.logotipo-pais {
+    font-size: 0.5rem;
+    color: rgb(67, 67, 67);
+}
+
+.cabecalho-centro {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.search {
+    display: flex;
+}
+
+.search-input {
+    outline: none;
+    height: 2rem;
+    width: 20rem;
+    border: 1px solid gray;
+    border-radius: 1rem 0 0 1rem;
+    padding: 0 1rem;
+}
+
+.search-button {
+    width: 4rem;
+    height: 2rem;
+    border: 1px solid gray;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.microphone {
+    height: 2rem;
+    width: 2rem;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.cabecalho-final {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logotipo-video {
+    border-radius: 50%;
+    background-color: white;
+    width: 2rem;
+    height: 2rem;
+}
+
+.logotipo-video:hover {
+    background-color: rgb(67, 67, 67);
+    color: white;
+}
+
+/* CSS DO MAIN */
+
+.principal {
+    height: 90vh;
+
+    display: flex;
+}
+
+.principal-sidebar {
+    width: 20vw;
+    padding: 8px;
+    overflow-y: auto;
+}
+
+.sidebar-button {
+    padding: 16px;
+    border-radius: 20px;
+}
+
+.sidebar-button:hover {
+    background-color: rgb(233, 232, 232);
+}
+
+.sidebar-button>i {
+    margin-right: 20px;
+}
+
+.principal-video {
+    background-color: blue;
+    width: 50vw;
+}
+
+.sidebar-inicio,
+.sidebar-centro,
+.sidebar-final {
+    display: flex;
+    flex-direction: column;
+    margin: 8px 0;
+}
+
+.sidebar-centro {
+    border-top: 1px solid rgb(191, 189, 189);
+    border-bottom: 1px solid rgb(191, 189, 189);
+}
+
+.sidebar-titulo {
+    padding: 16px;
+    margin: 8px 0;
+}
+
+/* CSS DO RECOMENDADOS */
+
+.principal-recomendados {
+    width: 30vw;
+    padding: 16px;
+}
+
+.recomendados-video {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.recomendados-video-thumbnail {
+    width: 40%;
+}
+
+.video-details-titulo {
+    margin-bottom: 6px;
+}
+
+.video-details-canal,
+.video-details-info {
+    font-size: 13px;
+    color: rgb(78, 78, 78);
+    margin-bottom: 6px;
+}
+
+img {
+    width: 100%;
+    border-radius: 8px;
+}

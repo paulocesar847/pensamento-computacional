@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EuTube</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-inicio">
+            <i class="fa-solid fa-bars"></i>
+            <div class="logotipo">
+                <i class="fa-brands fa-youtube logotipo-icone"></i>
+                <p class="logotipo-nome">EuTube</p>
+                <p class="logotipo-pais">BR</p>
+            </div>
+        </div>
+        <div class="cabecalho-centro">
+            <div class="search">
+                <input type="text" name="search" id="search-input" class="search-input" placeholder="Pesquisar...">
+                <button class="search-button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+            <button class="microphone">
+                <i class="fa-solid fa-microphone"></i>
+            </button>
+        </div>
+        <div class="cabecalho-final">
+            <button class="logotipo-video" title="Criar">
+                <i class="fa-solid fa-video"></i>
+            </button>
+            <button class="logotipo-video" title="Notificações">
+                <i class="fa-solid fa-bell"></i>
+            </button>
+            <button class="logotipo-video" title="Sua conta">
+                <i class="fa-solid fa-user"></i>
+            </button>
+        </div>
+    </header>
+    <main class="principal">
+        <div class="principal-sidebar">
+            <div class="sidebar-inicio">
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Início</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <span>Shorts</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-square-rss"></i>
+                    <span>Inscrições</span>
+                </a>
+            </div>
+            <div class="sidebar-centro">
+                <span class="sidebar-titulo">Você</span>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Seu canal</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>Histórico</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-list"></i>
+                    <span>Playlists</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-video"></i>
+                    <span>Seus vídeos</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-clock"></i>
+                    <span>Assistir mais tarde</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <span>Vídeos curtidos</span>
+                </a>
+            </div>
+            <div class="sidebar-final">
+                <span class="sidebar-titulo">Explorar</span>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-fire"></i>
+                    <span>Em alta</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-music"></i>
+                    <span>Música</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-film"></i>
+                    <span>Filmes</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-tower-broadcast"></i>
+                    <span>Ao vivo</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span>Jogos</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-newspaper"></i>
+                    <span>Notícias</span>
+                </a>
+                <a class="sidebar-button">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span>Esportes</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="principal-video">
+            <div class="video-thumbnail">
+                <img src="https://picsum.photos/seed/video1/336/188" alt="">
+            </div>
+            <div class="video-details">
+                <div class="video-details-titulo">
+                    <p>FICAMOS FECHADOS DENTRO DO SUPERMERCADO!!!</p>
+                </div>
+                <div class="video-details-flex">
+                    <div class="video-details-flex-canal">
+                        <img src="https://picsum.photos/seed/canal/88/88" alt="">
+                        <div>
+                            <p>Victor Andrade</p>
+                            <p>516M de inscritos</p>
+                        </div>
+                        <a href="#">
+                            Inscrever-se
+                        </a>
+                    </div>
+                    <div class="video-details-flex-botoes">
+                        <button class="botoes-like">
+                            <div class="botoes-like-esq">
+                                <i class="fa fa-thumbs-up"></i>
+                                <p>18 mil</p>
+                            </div>
+                            <div class="botoes-like-dir">
+                                <i class="fa fa-thumbs-down"></i>
+                            </div>
+                        </button>
+                        <button class="botoes-compartilhar">
+                            <i class="fa fa-share"></i>
+                            <p>Compartilhar</p>
+                        </button>
+                        <button class="botoes-download">
+                            <i class="fa fa-download"></i>
+                            <p>Fazer download</p>
+                        </button>
+                        <button class="botoes-mais">
+                            <i class="fa fa-ellipsis"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="video-details-descricao">
+                    <div>
+                        <p>342 mil visualizações</p>
+                        <p>há 3 dias</p>
+                    </div>
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam veniam provident neque, numquam, aperiam iste possimus fugit vero eveniet dolorum consequatur quod, asperiores porro voluptas eaque necessitatibus culpa cumque in.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="principal-recomendados">
+
+            <div class="recomendados-video">
+                <div class="recomendados-video-thumbnail">
+                    <img src="https://picsum.photos/seed/video1/336/188" alt="">
+                </div>
+                <div class="recomendados-video-details">
+                    <p class="video-details-titulo">Banheira de Nutella</p>
+                    <p class="video-details-canal">Lucas Neto</p>
+                    <p class="video-details-info">1B visualizações • há 7 anos</p>
+                </div>
+            </div>
+            <div class="recomendados-video">
+                <div class="recomendados-video-thumbnail">
+                    <img src="https://picsum.photos/seed/video2/336/188" alt="">
+                </div>
+                <div class="recomendados-video-details">
+                    <p class="video-details-titulo">Banheira de Nutella</p>
+                    <p class="video-details-canal">Lucas Neto</p>
+                    <p class="video-details-info">1B visualizações • há 7 anos</p>
+                </div>
+            </div>
+
+            <div class="recomendados-video">
+                <div class="recomendados-video-thumbnail">
+                    <img src="https://picsum.photos/seed/video3/336/188" alt="">
+                </div>
+                <div class="recomendados-video-details">
+                    <p class="video-details-titulo">Banheira de Nutella</p>
+                    <p class="video-details-canal">Lucas Neto</p>
+                    <p class="video-details-info">1B visualizações • há 7 anos</p>
+                </div>
+            </div>
+            <div class="recomendados-video">
+                <div class="recomendados-video-thumbnail">
+                    <img src="https://picsum.photos/seed/video4/336/188" alt="">
+                </div>
+                <div class="recomendados-video-details">
+                    <p class="video-details-titulo">Banheira de Nutella</p>
+                    <p class="video-details-canal">Lucas Neto</p>
+                    <p class="video-details-info">1B visualizações • há 7 anos</p>
+                </div>
+            </div>
+            <div class="recomendados-video">
+                <div class="recomendados-video-thumbnail">
+                    <img src="https://picsum.photos/seed/video5/336/188" alt="">
+                </div>
+                <div class="recomendados-video-details">
+                    <p class="video-details-titulo">Banheira de Nutella</p>
+                    <p class="video-details-canal">Lucas Neto</p>
+                    <p class="video-details-info">1B visualizações • há 7 anos</p>
+                </div>
+            </div>
+            <div class="recomendados-video">
+                <div class="recomendados-video-thumbnail">
+                    <img src="https://picsum.photos/seed/video6/336/188" alt="">
+                </div>
+                <div class="recomendados-video-details">
+                    <p class="video-details-titulo">Banheira de Nutella</p>
+                    <p class="video-details-canal">Lucas Neto</p>
+                    <p class="video-details-info">1B visualizações • há 7 anos</p>
+                </div>
+            </div>
+            <div class="recomendados-video">
+                <div class="recomendados-video-thumbnail">
+                    <img src="https://picsum.photos/seed/video7/336/188" alt="">
+                </div>
+                <div class="recomendados-video-details">
+                    <p class="video-details-titulo">Banheira de Nutella</p>
+                    <p class="video-details-canal">Lucas Neto</p>
+                    <p class="video-details-info">1B visualizações • há 7 anos</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
