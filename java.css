@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    min-height: 100vw;
+    background-color: rgb(51, 51, 51);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content{
+    background-color: rgb(51, 51, 51);
+    max-width: 600px;
+    padding: 1.5rem;
+}
+
+.content div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.title{
+    color: aliceblue;
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.description{
+    color: aliceblue;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+#date-input{
+    border: none;
+    background-color: white;
+    color: black;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.2rem;
+}
